@@ -13,19 +13,16 @@ public class Homework1 {
         x = readInt("insert the first number");
         y = readInt("insert the second number");
 
-        if(x<=0 || y<=0) {
+        if (x <= 0 || y <= 0) {
             write("no result");
             return;
+
+        } else while (x != y) {
+            if (x < y) y = y - x;
+            else x = x - y;
         }
+        write("result: " + x);
 
-
-       else while(x != y){
-            if(x < y)
-                y= y-x;
-            else
-                x = x-y;
-        write("result: "+ x);
-       }
 
     }
 }
